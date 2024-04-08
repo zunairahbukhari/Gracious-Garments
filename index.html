@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracious Garments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #Card-body {
+            text-align: center;
+            color: black;
+        }
+
+        #Card-body :hover {
+            color: orangered;
+        }
+
+        #Card-body span {
+            font-size: 17px;
+            font-weight: 700;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        #MAIN a {
+            text-decoration: none;
+        }
+
+        #CARD {
+            border: 2px solid transparent;
+        }
+
+        #CARD img {
+            border-top-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+        }
+
+        .heading h1 {
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-body P {
+            font-size: 12PX;
+        }
+
+        .line-through {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .see_more {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .see_more div {
+            height: 50px;
+            width: 150px;
+            color: white;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 17px;
+        }
+
+        .see_more a {
+            text-decoration: none;
+        }
+
+        .review {
+            text-align: center;
+            font-size: 14px;
+            font-family: cursive;
+        }
+
+        .customer_care a:link {
+            text-decoration: none;
+        }
+
+        .inside_gg a:link {
+            text-decoration: none;
+        }
+
+        .logo {
+            font-family: "Kanit", sans-serif;
+            font-weight: 500;
+            font-size: 30px;
+        }
+        .kiddy{
+            width: 50%;
+            height: 500px;
+        }
+        .kiddy_one{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .kiddy_one p{
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-top: 12px;
+        }
+        .kiddy_one h2{
+            font-weight: 700;
+            margin-top: 12px;
+        }
+        .kiddy_one h5{
+            font-weight: 700;
+            color: gray;
+        }
+        .kiddy_two{
+            background-image: url('https://bachaaparty.com/cdn/shop/files/z977360805_2_1024x1024.jpg?v=1710847029');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light top-0 start-0 w-100">
+            <div class="container">
+                <a href="index.html" class="navbar-brand d-lg-none logo">GRACIOUS GARMENTS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse p-2 flex-column" id="navbarContent">
+                    <div class="d-flex justify-content-center justify-content-lg-between flex-column flex-lg-row w-100">
+                        <form class="d-flex">
+                            <input type="search" class="form-control me-2" placeholder="search">
+                            <button class="btn btn-outline-dark" type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                        <a href="home.html" class="navbar-brand d-none d-lg-block logo">GRACIOUS GARMENTS</a>
+                        <ul class="navbar-nav">
+                            <li class="nav-item d-flex align-items-center">
+                                <a href="login.html" class="nav-link mx-2">
+                                    <i class="fas fa-user"></i>
+                                    My account
+                                </a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <a class="nav-link mx-2" href="">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    Bag
+                                </a>
+                                <span class="badge rounded-pill bg-secondary">0</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-block w-100">
+                        <ul class="navbar-nav d-flex justify-content-center align-items-center pt-3">
+                            <li class="nav-item mx-2">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="men.html" class="nav-link">Men</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="women.html" class="nav-link">Womens</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="kid.html" class="nav-link">Kids</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="unstitched.html" class="nav-link">Unstitched</a>
+                            </li>
+           
+                            <li class="nav-item mx-2">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" data-aos="fade-left">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://bonanzasatrangi.com/cdn/shop/collections/catagory_banner_2-min.jpg?v=1701069150"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>FESTIVE SALE 50% OFF </h5>
+                    <p>Don't miss out on our exclusive 50% off sale event! Discover incredible discounts on select
+                        garments from our collection.</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://bonanzasatrangi.com/cdn/shop/collections/Sale_Main_Men-min.jpg?v=1708579272"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>SALE FOR MEN COLLECTION</h5>
+                    <p>Explore our exclusive sale event tailored for men! Discover amazing discounts on a wide range of
+                        men's clothing and accessories.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://bonanzasatrangi.com/cdn/shop/collections/Summer-Collection-C.jpg?v=1707213402"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>GRACIOUS GARMENTS UNSTITCHED COLLECTION</h5>
+                    <p>Gracious Garment is a boutique clothing brand renowned for its elegant and sophisticated designs.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="heading mt-5 text-center" data-aos="fade-right">
+        <h1>SHOP BY POPULAR CATEGORY</h1>
+    </div>
+
+    <section class="container mt-5" data-aos="fade-up">
+        <div class="row" id="MAIN">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <a href="women.html">
+                    <div class="card" id="CARD" style="width: 20rem;">
+                        <img src="https://www.gulahmedshop.com/media/catalog/product/g/l/gls-24-35_1_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&canvas=2:3&height=550&width=367"
+                            class="card-img-top" alt="...">
+                        <div class="card-body" id="Card-body">
+                            <h5 class="card-title">Women Collection</h5>
+                            <p class="card-text">Upto <span>50%</span> Off</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <a href="men.html">
+                    <div class="card" id="CARD" style="width: 20rem;">
+                        <img src="https://www.gulahmedshop.com/media/catalog/product/m/i/mint_green_basic_kurta_kr-sty24-024_7_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&canvas=2:3&height=550&width=367"
+                            class="card-img-top" alt="...">
+                        <div class="card-body" id="Card-body">
+                            <h5 class="card-title">Male Collection</h5>
+                            <p class="card-text">Upto <span>40%</span> Off</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <a href="unstitched.html">
+                    <div class="card" id="CARD" style="width: 20rem;">
+                        <img src="https://www.gulahmedshop.com/media/catalog/product/b/-/b-42005_1_.jpg?optimize=medium&fit=bounds&bg-color=255,255,255&canvas=2:3&height=550&width=367"
+                            class="card-img-top" alt="...">
+                        <div class="card-body" id="Card-body">
+                            <h5 class="card-title">Unstitched Collection</h5>
+                            <p class="card-text">Upto <span>15%</span> Off</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="heading mt-5 text-center" data-aos="fade-up">
+        <h1>NEW ARRIVALS</h1>
+    </div>
+
+    <section class="container mt-5" data-aos="fade-right">
+        <div class="row">
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <a href="">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SRNS223P22b_360x.jpg?v=1707479385"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">RED DYED-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/ARNS223P19b_360x.jpg?v=1707479459"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">O=WHITE=LAWN-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SRNS223P05b_360x.jpg?v=1707479360"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">SAGE-LAWN-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/ARNS223P05b_360x.jpg?v=1707479225"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">BIEGE-LAWN-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="see_more mt-4">
+        <a href="unstitched.html">
+            <div class="sm_btn">See more</div>
+        </a>
+    </div>
+
+    <div class="heading mt-5 text-center" data-aos="fade-up">
+        <h1>TRENDING</h1>
+    </div>
+
+    <section class="container  mt-5"  data-aos="fade-left">
+        <div class="row mt-4">
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SS6242P13_2_360x.jpg?v=1710138450"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">MAROON-SHIMMERY-2 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.7060.0</span> <span
+                                class="Price text-danger "> PKR.6522.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SS2243P109_2_360x.jpg?v=1710138417"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">ORANGE-JACQUARD-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.7060.0</span> <span
+                                class="Price text-danger "> PKR.6522.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SS1242P02_2_360x.jpg?v=1710138375"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">BLACK-CAMBRIC-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.7060.0</span> <span
+                                class="Price text-danger "> PKR.6522.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SS2242P04_2_360x.jpg?v=1710138392"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">PINK-CAMBRIC-2 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.7060.0</span> <span
+                                class="Price text-danger "> PKR.6522.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="see_more mt-4">
+        <a href="women.html">
+            <div class="sm_btn">See more</div>
+        </a>
+    </div>
+
+    <div class="heading mt-5 text-center" data-aos="fade-up">
+        <h1>OUR KIDS COLLECTION</h1>
+    </div>
+
+<section class="container mt-5">
+    <div class="kids row" data-aos="fade-up">
+        <div class="col-sm-6 col-md-6 col-lg-6 kiddy bg-light kiddy_one">
+            <h5>Everyday collection 2024</h5>
+                <h2>Kids & Kiddy Collection</h2>
+            <p>"Introducing our enchanting Kids' Garment Collection, where every piece is crafted with care to ignite imagination and spark joy. From whimsical designs to cozy comfort, dress your little ones in outfits as vibrant and playful as their spirits."</p>
+            <div class="see_more mt-4">
+                <a href="kid.html">
+                    <div class="sm_btn bg-dark">Explore</div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 kiddy_two ">
+        </div>
+    </div>
+
+    <div class="row mt-4" data-aos="fade-right">
+        <div class="col-sm-1 col-md-4 col-lg-3">
+            <div class="card" style="width: 16rem;">
+                <img src="https://bachaaparty.com/cdn/shop/files/BPE_3419_4aab976e-2f59-4b3f-95ac-ddbdab7f96df_360x.jpg?v=1709126584"
+                    alt="">
+                <div class="card-body">
+                    <h6 class="card-title">Girls Cotton Woven Night Suit</h6>
+                    <p class="card-text"><span
+                            class="Price"> PKR.6522.0
+                            rps</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-1 col-md-4 col-lg-3">
+            <div class="card" style="width: 16rem;">
+                <img src="https://bachaaparty.com/cdn/shop/files/BPE_7342_360x.jpg?v=1702306442"
+                    alt="">
+                <div class="card-body">
+                    <h6 class="card-title">Girls Knitted Night Suit Sleep</h6>
+                    <p class="card-text"><span
+                            class="Price"> PKR.6522.0
+                            rps</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-1 col-md-4 col-lg-3">
+            <div class="card" style="width: 16rem;">
+                <img src="https://bachaaparty.com/cdn/shop/files/BPE_0539_360x.jpg?v=1695040818"
+                    alt="">
+                <div class="card-body">
+                    <h6 class="card-title">Girls Woven Suit Royal Blue</h6>
+                    <p class="card-text"><span
+                            class="Price"> PKR.6522.0
+                            rps</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-1 col-md-4 col-lg-3">
+            <div class="card" style="width: 16rem;">
+                <img src="https://bachaaparty.com/cdn/shop/files/BPE_0548_360x.jpg?v=1695040868"
+                    alt="">
+                <div class="card-body">
+                    <h6 class="card-title">Girls Woven Suit Dot Pink</h6>
+                    <p class="card-text"><span
+                            class="Price "> PKR.6522.0
+                            rps</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="see_more mt-4">
+    <a href="kid.html">
+        <div class="sm_btn">See For more</div>
+    </a>
+</div>
+
+    <div class="heading mt-5 text-center" data-aos="fade-up">
+        <h1>LOVED BY CUSTOMERS</h1>
+    </div>
+
+    <section class="container mt-5" data-aos="fade-up">
+        <div class="row">
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="review">
+                    <p>"I recently purchased a cocktail dress from your collection, and I must say, I'm beyond
+                        impressed! The fit is perfect, the quality is exceptional, and the attention to detail is
+                        remarkable. Thank you for such a beautiful piece!" </p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><br>
+                        <p class="text-italic">__Pari Rajput</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="review">
+                    <p>""I've been searching for the perfect button-up shirt for a while now, and I finally found it in
+                        your collection. The fabric is soft, the fit is comfortable, and the style is just what I was
+                        looking for" </p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><br>
+                        <p class="text-italic">__Muhammad Irfan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="review">
+                    <p>"I recently bought a denim jacket from your men's sale, and I couldn't be happier with my
+                        purchase. It's versatile, and looks great with everything. I've already received compliments on
+                        it, . " </p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><br>
+                        <p class="text-italic">__Syeda Maham</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="review">
+                    <p>"I ordered a tailored suit for an upcoming event, and I'm blown away by the quality. It fits like
+                        a glove and makes me feel confident and polished. The fact that it was part of your sale made it
+                        an even better value." </p>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><br>
+                        <p class="text-italic">__Sania Abbasi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer mt-5">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="https://www.facebook.com/" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.whatsapp.com/" class="me-4 text-reset">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/?lang=en" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://pk.linkedin.com/" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>GRACIOUS GARMENTS
+                            </h6>
+                            <p>
+                                Gracious Garments is a fashion-forward clothing brand renowned for its exquisite
+                                designs,
+                                superior quality fabrics, and impeccable craftsmanship. With a vision to redefine
+                                elegance,
+                                Gracious Garments offers a diverse range of apparel.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 customer_care">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                CUSTOMER CARE
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Contact Us</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">FAQs</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Order Inquiries</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Privacy Policy</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 inside_gg">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                INSIDE G.G
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">About Us</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Careers</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">G.G Magazine</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Store Locator</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i> 123 Maple Street<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Riverside, CA 92507<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;United States</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                graciousgarments@gmail.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> 555-44-8800</p>
+                            <p><i class="fas fa-print me-3"></i> 222-07-3422</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © All Copyrights Reserved
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>

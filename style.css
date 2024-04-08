@@ -1,0 +1,39 @@
+.row img {
+    height: 300px;
+}
+
+.bg_img_kids {
+    height: 100vh;
+    background-image: url("kids/carousel/hero-03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_img_login_signup {
+    height: 100vh;
+    background-image: url("kids/carousel/hero-02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.para_account {
+    font-family: "Dancing Script", cursive;
+}
+
+.head {
+    font-family: "Dancing Script", cursive;
+}
+
+.customer_care a:link {
+    text-decoration: none;
+}
+
+.inside_gg a:link {
+    text-decoration: none;
+}
+
+.logo {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}

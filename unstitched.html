@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unstitched Collection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Rubik+Scribble&display=swap"
+        rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .row {
+            margin-top: 22px;
+        }
+
+        #heading {
+            text-align: center;
+            font-family: "Dancing Script", cursive;
+            margin-top: 18px;
+            padding: 25px;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-body P {
+            font-size: 12PX;
+        }
+
+        .line-through {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .customer_care a:link {
+            text-decoration: none;
+        }
+
+        .inside_gg a:link {
+            text-decoration: none;
+        }
+
+        .logo {
+            font-family: "Kanit", sans-serif;
+            font-weight: 500;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light top-0 start-0 w-100 ">
+            <div class="container">
+                <a href="index.html" class="navbar-brand d-lg-none logo">GRACIOUS GARMENTS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse p-2 flex-column" id="navbarContent">
+                    <div class="d-flex justify-content-center justify-content-lg-between flex-column flex-lg-row w-100">
+                        <form class="d-flex">
+                            <input type="search" class="form-control me-2" placeholder="search">
+                            <button class="btn btn-outline-dark" type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                        <a href="index.html" class="navbar-brand d-none d-lg-block logo">GRACIOUS GARMENTS</a>
+                        <ul class="navbar-nav">
+                            <li class="nav-item d-flex align-items-center">
+                                <a href="login.html" class="nav-link mx-2">
+                                    <i class="fas fa-user"></i>
+                                    My account
+                                </a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <a class="nav-link mx-2" href="">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    Bag
+                                </a>
+                                <span class="badge rounded-pill bg-secondary">0</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-block w-100">
+                        <ul class="navbar-nav d-flex justify-content-center align-items-center pt-3">
+                            <li class="nav-item mx-2">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="men.html" class="nav-link">Men</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="women.html" class="nav-link">Womens</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="kid.html" class="nav-link">Kids</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="unstitched.html" class="nav-link">Unstitched</a>
+                            </li>
+                          
+                            <li class="nav-item mx-2">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://bonanzasatrangi.com/cdn/shop/collections/Catagory_Banner_0fadefc1-6bd8-4900-9447-1192f279dbd4.jpg?v=1708756634"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://bonanzasatrangi.com/cdn/shop/collections/Chamak-Damak.jpg?v=1709011228"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://bonanzasatrangi.com/cdn/shop/collections/Rang-Kahani.jpg?v=1708940224"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="heading" data-aos="zoom-in">
+        <h1>Our Luxurious Unstitched Collection &<br> Best Selling Product</h1>
+    </div>
+
+
+    <section class="container mt-4">
+        <div class="row" data-aos="fade-right">
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/C1S5243P07d_360x.jpg?v=1710402806"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">RED-BROSHIA-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.1700.0</span> <span
+                                class="Price text-danger "> PKR.1700.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/products/0001_RBN233P37A-052A9510_360x.jpg?v=1709725491"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">RED-JACQUARD-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.1700.0</span> <span
+                                class="Price text-danger "> PKR.1700.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/products/0007_RBN233P36B-052A0172_360x.jpg?v=1709725484"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">GREEN-JACQUARD-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.4400.0</span> <span
+                                class="Price text-danger "> PKR.3300.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/products/0009_RBN233P16B-052A7123_360x.jpg?v=1709725477"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">PINK-JACQUARD-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-4" data-aos="fade-right">
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/products/0022_HV3C233P03-030A2885_360x.jpg?v=1708930812"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">PURPLE-CAMBRIC-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SRNS223P20b_360x.jpg?v=1707479373"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">RUST-DYED-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SRNS223P02c_360x.jpg?v=1707479344"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">CHARCOAL-DYED-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SRNS223P19b_360x.jpg?v=1707479365"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">T-PINK DYED-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4" data-aos="fade-right">
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SRNS223P22b_360x.jpg?v=1707479385"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">RED DYED-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/ARNS223P19b_360x.jpg?v=1707479459"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">O=WHITE=LAWN-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SRNS223P05b_360x.jpg?v=1707479360"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">SAGE-LAWN-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/ARNS223P05b_360x.jpg?v=1707479225"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">BIEGE-LAWN-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4" data-aos="fade-right">
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/ARNS223P02b_360x.jpg?v=1707479218"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">PEACH-DYED-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SV1RK233P1b_360x.jpg?v=1707479403"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">BIEGE-DYED-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SV2RK233P1b_360x.jpg?v=1707479409"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">PEACH-DYED-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/RV1RK233P1b_360x.jpg?v=1707479333"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">PURPLE-DYED-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-4" data-aos="fade-right">
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/AV2RK233P1b_ae2f6a6c-5a62-4123-989c-62504c978fa4_360x.jpg?v=1707479303"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">ORANGE-DYED-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/AV1RK233P2b_7e124392-85fe-4cd6-92e3-d680ff53b630_360x.jpg?v=1707479295"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">GREEN-DYED-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/HBN233P31b_360x.jpg?v=1707479316"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">GREEN-JACQUARD-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SBN233P18b_360x.jpg?v=1707479338"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">MAROON-JAQUARD-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4" data-aos="fade-right">
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/HBN233P38Ab_360x.jpg?v=1707479320"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">PURPLE-JAQUARD-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/RBN233P24Ab_360x.jpg?v=1707479325"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">AQUA-JAQUARD-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SRNS223P03b_360x.jpg?v=1707479353"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">BROWN-DYED-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SRNS223P24b_360x.jpg?v=1707479393"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">BLUE-DYED-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-4" data-aos="fade-right">
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/products/ABN233P17B-S-GREEN-2_360x.jpg?v=1676372037"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">S-GREEN-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/products/RBN233P12-PURPLE-2_360x.jpg?v=1676371930"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">PURPLE-JACQUARD-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/C1S5243P07d_360x.jpg?v=1710402806"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">RED-BROSHIA-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/products/0022_HV3C233P03-030A2885_360x.jpg?v=1708930812"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">PURPLE-DYED-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4" data-aos="fade-right">
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/products/0022_HV3C233P03-030A2885_360x.jpg?v=1708930812"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">PURPLE-CAMBRIC-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SRNS223P20b_360x.jpg?v=1707479373"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">RUST-DYED-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SRNS223P02c_360x.jpg?v=1707479344"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">CHARCOAL-DYED-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-1 col-md-4 col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="https://cdn.shopify.com/s/files/1/0464/1731/3955/files/SRNS223P19b_360x.jpg?v=1707479365"
+                        alt="">
+                    <div class="card-body">
+                        <h6 class="card-title">T-PINK DYED-3 PIECE</h6>
+                        <p class="card-text"><span class="line-through">PKR.6960.0</span> <span
+                                class="Price text-danger "> PKR.5922.0
+                                rps</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="https://www.facebook.com/" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.whatsapp.com/" class="me-4 text-reset">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/?lang=en" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://pk.linkedin.com/" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>GRACIOUS GARMENTS
+                            </h6>
+                            <p>
+                                Gracious Garments is a fashion-forward clothing brand renowned for its exquisite
+                                designs,
+                                superior quality fabrics, and impeccable craftsmanship. With a vision to redefine
+                                elegance,
+                                Gracious Garments offers a diverse range of apparel.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 customer_care">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                CUSTOMER CARE
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Contact Us</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">FAQs</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Order Inquiries</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Privacy Policy</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 inside_gg">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                INSIDE G.G
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">About Us</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Careers</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">G.G Magazine</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Store Locator</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i> 123 Maple Street<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Riverside, CA 92507<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;United States</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                graciousgarments@gmail.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> 555-44-8800</p>
+                            <p><i class="fas fa-print me-3"></i> 222-07-3422</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © All Copyrights Reserved
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>
